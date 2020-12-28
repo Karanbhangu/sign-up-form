@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    background: hsl(0, 100%, 74%) ;
+    background-image: url("images/bg-intro-desktop.png");
+    display: flex;
+}
+.text{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.text h1{
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+.text p{
+    font-weight: 400;
+    font-family: 'Poppins', 'sans-serif';
+    color: #fff;
+    margin-left: auto;
+}
+/* Form: */
+.forms{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.forms p:nth-child(1){
+    background: hsl(248, 32%, 49%);
+    padding: 8px 75px;
+    font-family: 'Poppins', 'sans-serif';
+    border-radius: 5px;
+    box-shadow: 0px 3px 2px rgb(49, 49, 49);
+    color: white;
+    margin: 10px;
+}
+.mainform{
+    background: #fff;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 65%;
+    border-radius: 10px;
+    box-shadow: 0px 3px 2px rgb(49, 49, 49);
+}
+.mainform input{
+    width: 80%;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+.mainform input:focus{
+    outline: hsl(249, 10%, 26%) ;
+    font-weight: bold;
+    color: hsl(249, 10%, 26%);
+}
+.mainform input::placeholder{
+    color: hsl(249, 10%, 26%);
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: bold;
+}
+#trial{
+    text-decoration: none;
+    color: #fff;
+    background: hsl(154, 59%, 51%);
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: bold;
+    padding: 8px 23%;
+    border-radius: 4px;
+    box-shadow: 0px 3px 2px rgb(49, 49, 49);
+}
+#terms{
+    margin-top: 7px;
+    font-family: "Poppins", "sans-serif";
+    font-size: small;
+    color: hsl(246, 25%, 77%);
+}
+#services{
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+    font-weight: 400;
+    font-size: small;
+}
+@media only screen and (max-width:375px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: url(images/bg-intro-mobile.png);
+        background-color: hsl(0, 100%, 74%) ;
+    }
+    .text{
+        width: 100%;
+        height: 400%;
+        text-align: center;
+        position: relative;
+        bottom: 25px;
+    }
+    .forms{
+        width: 100%;
+        height: 60%;
+        position: relative;
+        bottom: 30px;
+    }
+    .text h1{
+        position: relative;
+        top: 5px;
+        font-weight: 400;
+        font-size: 30px;
+    }
+    .text p{
+        margin: 0;
+        position: relative;
+        bottom: 10px;
+        font-size: 12px;
+    }
+    .forms p:nth-child(1){
+        padding: 5px 10px;
+        color: white;
+    }
+    .text p{
+        margin-left: 0;
+    }
+    #trial{
+        padding: 3px 6px;
+    }
+    .mainform{
+        padding: 15px 6px;
+    }
+    .mainform input{
+        padding: 10px;
+    }
+}
